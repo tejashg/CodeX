@@ -1,0 +1,111 @@
+.homePageWrapper {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../images/space.png');
+    background-position:fixed ;
+}
+
+.formWrapper {
+    width: 35vw;
+    padding-top: 24vh;
+    padding-left: 40.5vw;
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.flexWrapper {
+    display: flex;
+}
+
+#item1 {
+    height: 13vh;
+    width: 5vw;
+}
+
+#item1 img {
+    height: 12vh;
+    width: 5.5vw;
+}
+
+.head1 {
+    margin-top: 4.5vh;
+    margin-left: 1.7vw;
+    font-size: 4vh;
+    font-weight: bolder;
+}
+
+.head2 {
+    margin-left: 1.9vw;
+    font-size: 2.2vh;
+    font-weight: 100;
+    color: rgb(111, 220, 220);
+}
+
+.roomIDWrapper {
+    display: inline-block;
+    margin-top: 2vh;
+    margin-left: 0.1vw;
+    width: 265px;
+    height: 3.6vh;
+    margin-right: 35vw;
+    border-radius: 4px;
+    border-style: hidden;
+    color: dimgray;
+    background-color: black;
+
+}
+
+.usernameWrapper {
+    display: inline-block;
+    margin-top: 1vh;
+    margin-left: 0.1vw;
+    width: 265px;
+    height: 3.6vh;
+    margin-right: 35vw;
+    border-radius: 4px;
+    border-style: hidden;
+    color: dimgray;
+}
+
+.joinButton {
+    display: block;
+    margin-top: 1.2vh;
+    margin-left: 212px;
+    height: 4.5vh;
+    width: 3.7vw;
+    color: white;
+    background-color: #458c8c;
+    border-radius: 7px;
+    font-size: 15.4px;
+}
+
+.lastFormFooter {
+    padding-top: 1vh;
+    padding-left: 0.1vw;
+}
+
+.lastFormFooter a {
+    text-decoration: underline;
+    color: #6fdcdc;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.lastFooterHead {
+    text-align: center;
+    padding-top: 39vh;
+    color: white;
+}
+
+.lastFooterHead a {
+    text-decoration: solid;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+button:hover {
+    color: #000000;
+    cursor: pointer;
+}

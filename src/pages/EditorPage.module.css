@@ -1,0 +1,106 @@
+.editorPageWrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(35, 29, 29);
+}
+
+.flexWrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#item1 {
+    height: 97vh;
+    width: 16vw;
+    padding-top: 2vh;
+    padding-left: 0.7vw;
+}
+
+.smallFlexWrapper {
+    display: flex;
+}
+
+#smallItem1 {
+    height: 10vh;
+    width: 4vw;
+}
+
+#smallItem1 img {
+    height: 10vh;
+    width: 4vw;
+}
+
+#smallItem2 {
+    padding-left: 1vw;
+    padding-top: 3.5vh;
+}
+
+.firstFlexHead {
+    font-size: 1.6vw;
+    font-weight: bolder;
+}
+
+.secondFlexHead {
+    font-size: 1vw;
+    color: rgb(111, 220, 220);
+}
+
+hr {
+    margin-top: 2vh;
+    border-width: 0;
+    height: 0.3px;
+    width: 15vw;
+    color: white;
+    background-color: white;
+}
+
+.connectedHead {
+    padding-top: 1.7vh;
+    padding-left: 4.3vw;
+    font-weight: 550;
+    font-size: 1.4vw;
+}
+
+.connectedUsers {
+    padding-top: 2vh;
+    height: 64vh;
+    width: 14vw;
+    padding-bottom: 1.5vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: 10vh;
+    grid-row-gap: 3vh;
+}
+
+.copyRoomIdBtn {
+    display: block;
+    background-color: white;
+    color: black;
+    height: 4.5vh;
+    width: 12vw;
+    border-radius: 7px;
+    font-size: 15.4px;
+    font-weight: 500;
+}
+
+.leaveBtn {
+    margin-top: 1.5vh;
+    color: white;
+    background-color: #458c8c;
+    height: 4.5vh;
+    width: 12vw;
+    border-radius: 7px;
+    font-size: 15.4px;
+    font-weight: 550;
+}
+
+.copyRoomIdBtn:hover {
+    color: rgb(111, 220, 220);
+}
+
+#item2 {
+    padding-top: 1vh;
+    background-color: #282a36;
+    width: 100%
+}
