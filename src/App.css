@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     color: white;
 }
 
-.CodeMirror{
+.CodeMirror {
     font-size: 1vw;
+    height: 500px
 }

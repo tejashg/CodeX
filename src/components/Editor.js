@@ -6,6 +6,7 @@ import 'codemirror/mode/javascript/javascript'
 import 'codemirror/addon/edit/closetag'
 import 'codemirror/addon/edit/closebrackets'
 import ACTIONS from '../Actions';
+import './Editor.css'
 
 const Editor = ({ socketRef, roomId, onCodeChange }) => {
   const editorRef = useRef(null);
