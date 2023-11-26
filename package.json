@@ -9,7 +9,7 @@
     "codemirror": "^5.65.12",
     "compass": "^0.1.1",
     "express": "^4.18.2",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.1",
     "react": "^18.2.0",
     "react-avatar": "^5.0.3",
     "react-dom": "^18.2.0",

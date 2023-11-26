@@ -1,3 +1,49 @@
 .CodeMirror {
-    height: 100%;
+    height: 95%;
 }
+
+.themeContainer{
+    text-align: center;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.switchThemeButton {
+    /* margin: 0 auto; */
+    /* display: block; */
+    background-color: #458c8c;
+    color: white;
+    padding: 2px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-bottom: 1px;
+}
+
+.switchThemeButton img{
+    display: inline-block;
+    background-color: #458c8c;
+    /* padding: 2px 5px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px; */
+    width: 24px;
+    /* height: 20px; */
+  }
+  
+  .switchThemeButton:hover {
+    color:black;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    font-size: 14px;
+  }

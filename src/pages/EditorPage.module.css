@@ -64,7 +64,7 @@ hr {
 
 .connectedUsers {
     padding-top: 2vh;
-    height: 64vh;
+    height: 61vh;
     width: 14vw;
     padding-bottom: 1.5vh;
     display: grid;
@@ -82,9 +82,11 @@ hr {
     border-radius: 7px;
     font-size: 15.4px;
     font-weight: 500;
+    margin-left: 15px;
 }
 
 .leaveBtn {
+    margin-left: 15px;
     margin-top: 1.5vh;
     color: white;
     background-color: #458c8c;

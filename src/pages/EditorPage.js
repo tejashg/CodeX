@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react'
-import styles from './EditorPage.module.css'
-import img from '../images/code-sync.png'
+import React, { useEffect, useRef, useState } from 'react';
+import styles from './EditorPage.module.css';
+import img from '../images/code-sync.png';
 import toast from 'react-hot-toast';
-import Client from '../components/Client'
-import Editor from '../components/Editor'
+import Client from '../components/Client';
+import Editor from '../components/Editor';
 import ACTIONS from '../Actions';
 import { initSocket } from '../socket';
 import {
@@ -89,6 +89,19 @@ const EditorPage = () => {
     reactNavigator('/');
   }
 
+  async function saveCodeToFile() {
+    const content = codeRef.current;
+    const blob = new Blob([content], { type: 'text/plain' });
+    const downloadLink = document.createElement('a');
+
+    downloadLink.href = URL.createObjectURL(blob);
+    downloadLink.download = 'myCode.txt';
+
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  }
+
   if (!location.state) {
     return <Navigate to="/" />;
   }
@@ -110,26 +123,36 @@ const EditorPage = () => {
             <hr />
             <div className={styles.connectedHead}>Connected</div>
             <div className={styles.connectedUsers}>
-              {
-                clients.map((client) => (
-                  <Client username={client.username} key={client.socketId} />
-                ))}
+              {clients.map((client) => (
+                <Client username={client.username} key={client.socketId} />
+              ))}
             </div>
-            <button className={styles.copyRoomIdBtn} onClick={copyRoomId}>Copy Room ID</button>
-            <button className={styles.leaveBtn} onClick={leaveRoom}>Leave</button>
+            <div className={styles.buttonWrapper}>
+              <button className={styles.copyRoomIdBtn} onClick={copyRoomId}>
+                Copy Room ID
+              </button>
+              <button className={`${styles.copyRoomIdBtn} ${styles.saveCodeBtn}`} onClick={saveCodeToFile}>
+                Save Code
+              </button>
+              <button className={styles.leaveBtn} onClick={leaveRoom}>
+                Leave
+              </button>
+            </div>
           </div>
           <div className={styles.item} id={styles.item2}>
-            <Editor socketRef={socketRef}
+            <Editor
+              socketRef={socketRef}
               roomId={roomId}
               onCodeChange={(code) => {
-                console.log(code)
+                console.log(code);
                 codeRef.current = code;
-              }} />
+              }}
+            />
           </div>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default EditorPage
+export default EditorPage;
