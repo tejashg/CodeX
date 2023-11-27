@@ -72,8 +72,8 @@ const Home = () => {
           If you don't have an invite then create &nbsp;<a href="/" onClick={createNewRoom}>new room</a>
         </footer>
       </div>
-      <footer className={styles.lastFooterHead}>Built with 💙 by &nbsp;
-        <a href="https://github.com/tejashg" target='_blank' rel="noreferrer">Tejash Gupta</a></footer>
+      {/* <footer className={styles.lastFooterHead}>Built with 💙 by &nbsp;
+        <a href="https://github.com/tejashg" target='_blank' rel="noreferrer">Tejash Gupta</a></footer> */}
     </div>
   )
 }
